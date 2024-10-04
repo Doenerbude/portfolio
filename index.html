@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@2.0.2" integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Alexander Weimer CV</title>
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 20px 30px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #0d6efd;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item.right::after {
+            left: -16px;
+        }
+
+        .timeline-item .timeline-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+            position: relative;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center my-5">Alexander Weimer</h2>
+
+        <h3>Hey, how are you?</h3>
+        <p>
+            Welcome to my little SPA. <br />
+            My name is Alexander Weimer and I am currently a student of informatics at the BHT. 
+            I started being interested in the world of IT at an early age and my interest has never left me. 
+            Over the last few years I have learnt about many new technologies and I am always looking to develop further. 
+            Below you can see where I have already gained experience. This page is written in Go and HTMX. 
+        </p>
+
+        <div class="social-buttons" style="text-align: center;">
+            <a href="https://www.linkedin.com/in/alexander-weimer" class="linkedin" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/alexanderweimer" class="github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <h3>Working timeline</h3>
+
+        <div class="timeline">
+            <!-- Timeline item -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h4>May 2023 - Present</h4>
+                    <p><strong>Working student - Data Science</strong><br>Deutsche Bahn</p>
+                </div>
+            </div>
+
+            <!-- Timeline item -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h4>February 2023 - March 2023</h4>
+                    <p><strong>Working student</strong><br>GFaI e.V.</p>
+                </div>
+            </div>
+
+            <!-- Timeline item -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h4>September 2021 - July 2022</h4>
+                    <p><strong>Dual student - Data Science</strong><br>Deutsche Bahn</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h4>Student job</h4>
+                    <p><strong>Web development</strong><br>q23.media</p>
+                </div>
+            </div>
+
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body">Alexander Weimer</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+</html>
